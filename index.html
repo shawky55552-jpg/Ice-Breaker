@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monster Math Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <header class="top-bar">
+        <div class="title-wrap">
+          <div class="title-badge">Monster Math Challenge</div>
+        </div>
+        <div class="progress-panel">
+          <div class="question-number">Question <span id="questionNumber">1</span> / 25</div>
+          <div class="power-label">Power Bar</div>
+          <div class="power-bar">
+            <div id="powerFill" class="power-fill"></div>
+          </div>
+        </div>
+      </header>
+
+      <main class="battle-area">
+        <div class="scene">
+          <div class="hero-zone">
+            <div id="hero" class="hero">
+              <div class="hero-head">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="smile"></div>
+              </div>
+              <div class="hero-body"></div>
+              <div class="arm arm-left"></div>
+              <div class="arm arm-right"></div>
+            </div>
+          </div>
+
+          <div class="monster-zone">
+            <div id="monster" class="monster">
+              <div class="monster-head">
+                <div class="horn left"></div>
+                <div class="horn right"></div>
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="mouth"></div>
+              </div>
+              <div class="monster-body"></div>
+              <div class="claw claw-left"></div>
+              <div class="claw claw-right"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-panel">
+          <div id="statusText" class="status-text">Ready, Math Hero!</div>
+        </div>
+
+        <div id="particles" class="particles"></div>
+      </main>
+
+      <section class="question-card">
+        <div id="questionType" class="question-type">Addition Challenge</div>
+        <div id="questionText" class="question-text">7 + 4 = ?</div>
+        <div id="answerButtons" class="answer-grid" aria-label="Answer buttons"></div>
+      </section>
+    </div>
+
+    <div id="finalOverlay" class="final-overlay hidden" aria-live="polite">
+      <div class="final-card">
+        <div class="victory-badge">YOU DID IT!</div>
+        <h2>YOU ARE A MATH HERO!</h2>
+        <button id="playAgainBtn" class="play-again-btn">PLAY AGAIN</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
